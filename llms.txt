@@ -1,0 +1,10 @@
+# Invest in Short Term Rentals
+> Educational resource for investing in short-term rental properties.
+
+## About
+Invest in Short Term Rentals is an educational platform for real estate investors interested in building wealth through Airbnb, VRBO, and other short-term rental strategies. The site provides market analysis, investment guides, and practical advice for STR property acquisition and management.
+
+## Key Pages
+- Home: https://www.investinshorttermrentals.com/
+- Blog: https://www.investinshorttermrentals.com/blog
+- Resources: https://www.investinshorttermrentals.com/resources
