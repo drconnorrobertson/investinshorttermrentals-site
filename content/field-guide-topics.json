@@ -1,0 +1,56 @@
+[
+  [
+    "portfolio-cash-commitment-calendar",
+    "Build a portfolio cash commitment calendar",
+    "Annual investment totals can hide months when several obligations occur together. A commitment calendar places known payments, reserve transfers and planned project draws on dates. Keep expected operating receipts distinct from cash already available, and label uncertain dates so a model does not imply funding certainty.",
+    "Available cash by account;Known payment schedule;Project draw estimates;Restricted reserve balances",
+    "List commitments by payment date;Separate committed and optional spending;Show cash already available;Review timing changes with the portfolio owner",
+    "Do not fund a committed payment with an expected receipt without showing the dependency. A projection is not the same as a bank balance.",
+    "A hypothetical portfolio has a furniture balance due before a seasonal payout. The calendar identifies the timing gap even though the annual cash summary appears positive."
+  ],
+  [
+    "underwriting-source-confidence-map",
+    "Map confidence in underwriting sources",
+    "Not every model input deserves the same confidence. A source map records whether a number comes from reconciled history, a current quote, a comparable or an unsupported estimate. The aim is to make uncertainty visible and prioritize research, not to turn a subjective score into a promised investment outcome.",
+    "Current model inputs;Source document references;Quote dates;Open verification questions",
+    "Label the source type for each input;Record its date and property relevance;Identify high-impact unsupported inputs;Update the map when better evidence arrives",
+    "A large volume of comparable listings does not resolve a mismatch in dates, property features or revenue definitions. Record relevance as well as quantity.",
+    "An illustrative model uses an insurer quote for coverage cost and an unverified revenue estimate. The map makes the evidence difference visible and prioritizes revenue reconciliation before capital is committed."
+  ],
+  [
+    "planned-versus-actual-capital-bridge",
+    "Bridge planned and actual property capital",
+    "A capital bridge explains how the original approved budget became the actual amount funded. Separate scope additions, price changes, timing changes and reserves still held. Keep cash paid distinct from unpaid commitments and avoid interpreting a higher capital contribution as an accounting classification.",
+    "Original approved budget;Final settlement figures;Project invoices and credits;Remaining commitments",
+    "Keep the original baseline;Group changes by documented cause;Reconcile cash paid and unpaid commitments;Explain reserve transfers separately",
+    "Do not reduce the budget variance by dropping an unpaid obligation. The bridge should show both the payment position and the total commitment.",
+    "An illustrative project starts with a $60,000 launch budget, adds an approved $4,000 scope change and receives a $1,000 credit. The bridge shows a $63,000 commitment and separately states how much has been paid."
+  ],
+  [
+    "monthly-assumption-refresh-calendar",
+    "Schedule reviews of investment assumptions",
+    "Inputs become stale at different rates. A signed financing term, an operating quote and an annual revenue estimate should each have a review trigger appropriate to the decision they support. Use a refresh calendar to identify when the model must be updated before the next approval.",
+    "Input source register;Contract and quote expiry dates;Operating reporting schedule;Upcoming approval dates",
+    "Assign a review trigger to material inputs;Name the person who will obtain updates;Record changes and unchanged confirmations;Refresh the decision model before reuse",
+    "A recently edited spreadsheet can still contain old inputs. Track the source date rather than relying on the file modification date.",
+    "A hypothetical owner revisits a purchase model after a lender quote expires. The review updates the financing assumption and identifies which capital and cash-flow outputs need recalculating."
+  ],
+  [
+    "portfolio-concentration-evidence-review",
+    "Review the evidence behind portfolio concentration",
+    "Two properties may share exposure through demand seasonality, management capacity or funding commitments even when their addresses differ. A concentration review identifies those connections using documented operating facts. It organizes questions for the owner rather than assigning an unsupported diversification score.",
+    "Property operating calendars;Manager and vendor assignments;Financing schedules;Owner liquidity commitments",
+    "List shared operating dependencies;Compare timing of seasonal cash needs;Identify reliance on the same providers;Record which proposed changes require further evidence",
+    "Do not assume different postal addresses establish independent risks. Describe the actual shared dependency and the effect you want to investigate.",
+    "An illustrative portfolio uses one manager and the same peak booking season for two homes. The review treats those as shared dependencies while separately examining each property\u2019s budget and vendor coverage."
+  ],
+  [
+    "investment-review-question-log",
+    "Keep a decision-focused investment question log",
+    "A review meeting becomes more useful when unresolved questions have owners and evidence requirements. Write questions that can be answered with a document, calculation or explicit decision. Preserve answers and source references so the same issue is not repeatedly reopened without new information.",
+    "Current model;Prior review notes;Evidence register;Next decision deadline",
+    "Write one decision-relevant question per row;Name the evidence needed;Assign a response owner;Record the answer and its effect on the model",
+    "A question such as \u201cis this a good deal?\u201d is too broad to close. Break it into the assumptions and tradeoffs the owner actually needs to assess.",
+    "In an illustrative review, a question about operating cost becomes a request for the current management fee base and add-on schedule. The answer is linked to the cost model before the next owner decision."
+  ]
+]
