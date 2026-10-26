@@ -1,0 +1,41 @@
+[
+  {
+    "property_id": "DEMO",
+    "month": "2026-04",
+    "calendar_nights": 30,
+    "booked": 18,
+    "open": 12,
+    "blocked": 0,
+    "unknown": 0,
+    "known_eligible_nights": 30,
+    "known_eligible_occupancy_pct": "60.00",
+    "calendar_booked_share_pct": "60.00",
+    "conditional_on_known_statuses": false
+  },
+  {
+    "property_id": "DEMO",
+    "month": "2026-05",
+    "calendar_nights": 31,
+    "booked": 12,
+    "open": 8,
+    "blocked": 11,
+    "unknown": 0,
+    "known_eligible_nights": 20,
+    "known_eligible_occupancy_pct": "60.00",
+    "calendar_booked_share_pct": "38.71",
+    "conditional_on_known_statuses": false
+  },
+  {
+    "property_id": "DEMO",
+    "month": "2026-06",
+    "calendar_nights": 30,
+    "booked": 12,
+    "open": 10,
+    "blocked": 4,
+    "unknown": 4,
+    "known_eligible_nights": 22,
+    "known_eligible_occupancy_pct": "54.55",
+    "calendar_booked_share_pct": "40.00",
+    "conditional_on_known_statuses": true
+  }
+]
