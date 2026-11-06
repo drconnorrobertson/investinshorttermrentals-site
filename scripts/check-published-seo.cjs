@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const out=process.argv[2]||'dist',origin='https://www.investinshorttermrentals.com';
+const urls=[...fs.readFileSync(path.join(out,'sitemap.xml'),'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);assert(urls.length>0);assert.equal(new Set(urls).size,urls.length,'Duplicate sitemap URLs');
+function resolve(p){const clean=decodeURIComponent(p).replace(/^\/|\/$/g,'');return [path.join(out,clean,'index.html'),path.join(out,clean+'.html'),path.join(out,clean)].find(x=>fs.existsSync(x)&&fs.statSync(x).isFile());}
+for(const u of urls){const url=new URL(u);assert.equal(url.origin,origin);assert(!url.search&&!url.hash);const f=resolve(url.pathname);assert(f,'Missing '+u);const s=fs.readFileSync(f,'utf8');const can=[...s.matchAll(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/g)].map(x=>x[1]);assert.deepEqual(can,[u],'Canonical '+u);assert(!/<meta\b(?=[^>]*name="robots")(?=[^>]*content="[^"]*noindex)/i.test(s),'Noindex '+u);}
+const guide=resolve('/field-guides/str-portfolio-cash-stress-test/'),html=fs.readFileSync(guide,'utf8');assert.equal((html.match(/<h1\b/g)||[]).length,1);for(const m of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs))JSON.parse(m[1]);for(const m of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)){const p=new URL(m[1],origin).pathname;assert(resolve(p),'Broken link '+p);}
+console.log('Published SEO passed: '+urls.length+' unique sitemap owners and portfolio tool links.');
