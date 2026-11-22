@@ -1,0 +1,5 @@
+Fictional method,Unit,Separate annual electric bill,Shared annual pool reference only,Allocation fraction,Allocated shared cost,Unit utility total
+Equal split,A,960,2400,0.5,1200,2160
+Equal split,B,1440,2400,0.5,1200,2640
+Booked-night split,A,960,2400,0.4,960,1920
+Booked-night split,B,1440,2400,0.6,1440,2880
