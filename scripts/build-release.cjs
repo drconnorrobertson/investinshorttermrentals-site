@@ -1,5 +1,6 @@
 const {execFileSync}=require('node:child_process');
 execFileSync(process.execPath,["scripts/build-content.mjs"],{stdio:'inherit'});
+execFileSync(process.execPath,["scripts/test-exit-proceeds.mjs", "dist"],{stdio:'inherit'});
 execFileSync(process.execPath,["scripts/test-worksheet-return.mjs", "dist"],{stdio:'inherit'});
 execFileSync(process.execPath,["scripts/test-worksheet-controls.mjs", "dist"],{stdio:'inherit'});
 execFileSync(process.execPath,["scripts/test-cash-comparisons.mjs", "dist"],{stdio:'inherit'});
